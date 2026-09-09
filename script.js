@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const API_URL = "https://mhs-backend-api.onrender.com";
+  const API_BASE = "https://mhs-backend-api.onrender.com";
 
   const form = document.getElementById("predict-form");
   const submitBtn = document.getElementById("submit-btn");
