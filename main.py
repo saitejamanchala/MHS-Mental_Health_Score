@@ -11,6 +11,10 @@ app = FastAPI()
 # 2. Configure CORS middleware
 app.add_middleware(
     CORSMiddleware,
+    allow_origins=[
+        "https://mhs-mental-health-score.onrender.com",  # Your frontend domain
+        "*"  # Or wildcard to allow all origins
+    ],
     allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
